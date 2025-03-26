@@ -9,6 +9,12 @@
     "build:prod": "tsc && vite build --mode production",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
+    "login": "clasp login",
+    "logout": "clasp logout",
+    "setup": "rm -rf .clasp.json && mkdir dist && clasp create --type sheets --title \"SideBarApp\" --rootDir ./dist && mv ./dist/.clasp.json ./.clasp.json && rm -rf dist",
+    "open": "clasp open --addon",
+    "push": "clasp push",
+    "pull": "clasp pull",
     "deploy": "yarn build:prod && mkdir claspDist && cp -r src/server/* claspDist && cp dist/index.html claspDist && cp appsscript.json claspDist && clasp push && rm -rf claspDist"
   },
   "dependencies": {

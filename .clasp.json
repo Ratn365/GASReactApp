@@ -1,7 +1,7 @@
 {
-  "scriptId": "1QbuvjpU88vHNUmPCauEW4z9CojkonQ02cfm-LF3EQN_OWAciJKfTBXWZ",
-  "parentId": [
-    "1Avj38Z7zMRF-VIQn1ACtsiCzS2LXjHQWfD_PF2TtqVY"
-],
-  "rootDir": "./claspDist"
+    "scriptId": "1i3MtuxuBNy5nUeyr40IAIoF_MFagd_GJkGAqC0rxbv2n7DGxhra-cKII",
+    "rootDir": "./claspDist",
+    "parentId": [
+        "1ZZAeMxuKK6OLHcizcjngATTVT4UG32flblQTVzFq04w"
+    ]
 }
