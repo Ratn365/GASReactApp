@@ -1,9 +1,9 @@
 import "./App.css";
 import { useState, useEffect } from "react";
 
-import SheetEditor from "./components/SheetEditor";
-import Greet from "./components/Greet";
-import AboutMe from "./components/Aboutme";
+import SheetEditor from "./app/SheetEditor";
+import Greet from "./app/Greet";
+import AboutMe from "./app/AboutMe";
 
 declare global {
   interface Window {

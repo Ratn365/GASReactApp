@@ -1,10 +1,10 @@
-import { useState, ChangeEvent, FormEvent } from 'react';
+import { useState, ChangeEvent, FormEvent, JSX } from 'react';
 
 type FormInputProps = {
   submitNewSheet: (sheetName: string) => void;
 };
 
-const FormInput: React.FC<FormInputProps> = ({ submitNewSheet }) => {
+function FormInput({ submitNewSheet }: FormInputProps) {
   const [inputValue, setInputValue] = useState<string>('');
 
   const handleChange = (event: ChangeEvent<HTMLInputElement>) => {

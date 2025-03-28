@@ -51,18 +51,3 @@ export const openSidebar = () => {
   SpreadsheetApp.getUi().showSidebar(html);
 };
 
-/*// @ts-ignore
-export const greetDialog = () => {
-  const html = HtmlService.createHtmlOutputFromFile('index')
-    .setWidth(600)
-    .setHeight(600);
-  SpreadsheetApp.getUi().showModalDialog(html, 'Sheet Editor');
-};
-
-// @ts-ignore
-export const manageSheetDialog = () => {
-  const html = HtmlService.createHtmlOutputFromFile('index')
-    .setWidth(600)
-    .setHeight(600);
-  SpreadsheetApp.getUi().showModalDialog(html, 'Sheet Editor');
-};*/

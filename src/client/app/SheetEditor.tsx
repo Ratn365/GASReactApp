@@ -1,11 +1,10 @@
 import { useEffect, useState } from 'react';
-import { TransitionGroup, CSSTransition } from 'react-transition-group';
-import FormInput from './FormInput';
-import SheetButton from './SheetButton';
-import { getSheetsData, deleteSheet, setActiveSheet, addSheet  } from "../api/sheetManager";
+import FormInput from '../components/FormInput';
+import SheetButton from '../components/SheetButton';
+import { getSheetsData, deleteSheet, setActiveSheet, addSheet } from "../api/sheetManager";
 import { SheetDetails } from "../../common/type";
 
-const SheetEditor: React.FC = () => {
+function SheetEditor() {
   const [names, setNames] = useState<SheetDetails[]>([]);
 
   useEffect(() => {
@@ -32,21 +31,18 @@ const SheetEditor: React.FC = () => {
   return (
     <div>
       <FormInput submitNewSheet={submitNewSheet} />
-      <TransitionGroup className="sheet-list">
-        {names.length > 0 &&
-          names.map((name) => (
-            <CSSTransition classNames="sheetNames" timeout={500} key={name.name}>
-              <SheetButton
-                sheetDetails={name}
-                deleteSheet={deleteSheetfn}
-                setActiveSheet={setActiveSheetfn}
-              />
-            </CSSTransition>
-          ))}
-      </TransitionGroup>
+      {names.length > 0 &&
+        names.map((name) => (
+          <SheetButton
+            sheetDetails={name}
+            deleteSheet={deleteSheetfn}
+            setActiveSheet={setActiveSheetfn}
+          />
+        ))}
+
     </div>
   );
 };
 
 export default SheetEditor;
- 
+
