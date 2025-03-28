@@ -1,6 +1,6 @@
 
 
-function AboutMe(): JSX.Element {
+function AboutMe()  {
 
 
   return (

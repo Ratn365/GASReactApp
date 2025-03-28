@@ -1,4 +1,4 @@
-import { useState, ChangeEvent, FormEvent, JSX } from 'react';
+import { useState, ChangeEvent, FormEvent } from 'react';
 
 type FormInputProps = {
   submitNewSheet: (sheetName: string) => void;

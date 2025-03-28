@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { getGreeting } from "../api/greetManager";
 
-function Greet(): JSX.Element {
+function Greet() {
   const [greet, setGreet] = useState("");
 
   const handleButtonClick = async () => {
